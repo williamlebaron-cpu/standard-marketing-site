@@ -105,8 +105,9 @@
   }
   p.section-lede { color: var(--graphite); font-size: 1.02rem; max-width: 62ch; margin: 0 0 44px; }
 
-  .services { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-  @media (max-width: 760px) { .services { grid-template-columns: 1fr; } }
+  .services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  @media (max-width: 960px) { .services { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 640px) { .services { grid-template-columns: 1fr; } }
   .service-card {
     background: var(--paper-raised); border: 1px solid var(--line); border-radius: 12px; padding: 32px;
   }
@@ -191,24 +192,32 @@
 <section id="services">
   <div class="wrap">
     <p class="eyebrow">What we do</p>
-    <h2 class="section-title">Two things, done properly.</h2>
-    <p class="section-lede">We don't spread thin across every channel and every industry. We run paid media for two kinds of clients, and we run it well.</p>
+    <h2 class="section-title">Three things, done properly.</h2>
+    <p class="section-lede">We don't spread thin across every channel and every industry. Campaigns for two kinds of clients, and the video production most of that work actually depends on.</p>
 
     <div class="services">
-      <div class="service-card">
-        <h3>Destination &amp; county marketing</h3>
-        <p class="desc">We manage digital advertising campaigns on behalf of destination marketing organizations and counties — building and running the paid media that drives visitor and tourism traffic, and reporting on what's actually moving the needle.</p>
-        <ul class="examples">
-          <li><strong>A rural Mountain West county</strong> — lodging bookings up 40% year-over-year during the campaign, with state tourism funding growing more than 2x in a single year.</li>
-          <li><strong>Multi-county campaigns across the Southwest</strong> — each paired with its own visitor directory and local business listings, built to keep driving traffic after the ads stop.</li>
-        </ul>
-      </div>
       <div class="service-card">
         <h3>Lead-generation ad management</h3>
         <p class="desc">For product and service businesses, we manage ad spend across search and other paid channels to drive qualified leads — setting up campaigns, tracking what actually converts, and moving spend toward what performs.</p>
         <ul class="examples">
           <li><strong>A multi-state residential services company</strong> — lead volume tripled in six months, with a single four-month stretch generating over $800K in cash from paid ads alone.</li>
           <li><strong>A software company moving buyers off subscription pricing</strong> — campaign structure, conversion tracking, and landing page testing built from the ground up.</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>Video production</h3>
+        <p class="desc">Most of what performs today needs real video, not stock footage with music over it — so we shoot and produce it ourselves, built specifically for the ads and pages it's going to run on, not handed off to a separate vendor.</p>
+        <ul class="examples">
+          <li><strong>Winery &amp; hospitality directories across two states</strong> — on-location video for every featured business, shot and edited in-house.</li>
+          <li><strong>Destination and product video built alongside the campaigns</strong> running against it, on the same timeline, not a separate workstream.</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>Destination &amp; county marketing</h3>
+        <p class="desc">We manage digital advertising campaigns on behalf of destination marketing organizations and counties — building and running the paid media that drives visitor and tourism traffic, and reporting on what's actually moving the needle.</p>
+        <ul class="examples">
+          <li><strong>A rural Mountain West county</strong> — lodging bookings up 40% year-over-year during the campaign, with state tourism funding growing more than 2x in a single year.</li>
+          <li><strong>Multi-county campaigns across the Southwest</strong> — each paired with its own visitor directory and local business listings, built to keep driving traffic after the ads stop.</li>
         </ul>
       </div>
     </div>
@@ -245,6 +254,10 @@
       <div class="work-item">
         <span class="tag">Software</span>
         <p>Built out paid search, conversion tracking, and landing page testing for a software company positioning against subscription pricing — infrastructure most teams that size don't have yet.</p>
+      </div>
+      <div class="work-item">
+        <span class="tag">Video production</span>
+        <p>Shot and edited on-location video for a hospitality and winery directory spanning two states — every featured business filmed in-house, not outsourced to a separate production team.</p>
       </div>
     </div>
 
